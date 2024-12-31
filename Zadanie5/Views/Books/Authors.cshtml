@@ -1,0 +1,25 @@
+﻿@model IEnumerable<Zadanie5.ViewModels.AuthorViewModel>
+
+@{
+    ViewBag.Title = "Authors for Book";
+}
+
+<h2>Authors</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Author Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var author in Model)
+        {
+            <tr>
+                <td>@author.AuthorName</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a href="@Url.Action("Index", "Books")" class="btn btn-secondary">Back to Books</a>

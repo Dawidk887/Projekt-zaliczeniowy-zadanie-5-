@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container text-center my-5">
+    <h1 class="display-4 mb-4">Welcome to Zadanie5</h1>
+
+    <div class="d-flex justify-content-center gap-4">
+        <a href="@Url.Action("Index", "Books")" class="btn btn-lg btn-primary shadow">
+            <i class="bi bi-book"></i> View Books
+        </a>
+        <a href="@Url.Action("Index", "Authors")" class="btn btn-lg btn-success shadow">
+            <i class="bi bi-person"></i> View Authors
+        </a>
+    </div>
+</div>
+
